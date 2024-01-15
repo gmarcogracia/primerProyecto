@@ -36,12 +36,12 @@
   }
   
   .characters button.selected {
-    background-color:#920b0b;
+    background-color: greenyellow;
     color: white;
   }
   
   .characters button.selected:hover {
-    background-color: #920b0b;
+    background-color: green;
     color: white;
   }
   

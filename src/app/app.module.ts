@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './characters/characters.component';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,13 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    UpperCasePipe,
+    NgIf,
+    NgFor
+    
+     
+  
   ],
   providers: [
     provideClientHydration()
