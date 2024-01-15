@@ -1,4 +1,15 @@
-<div>
-    <label for="name">Character name: </label>
-    <input id="name" [(ngModel)]="character.name" placeholder="name">
-  </div>
+
+<h2>My CHaracters</h2>
+<ul class="characters">
+  <li *ngFor="let character of characters">
+    <button type="button">
+      
+      <span class="badge">{{character.id}}</span>
+      <span class="name">{{character.name}}</span>
+    </button>
+  </li>
+</ul>
+
+
+
+
